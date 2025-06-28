@@ -7,7 +7,7 @@ const Navbar = () => {
         setMenuState(!menuState);
     };
     return (
-        <div className="flex justify-between items-center fixed top-0 z-50 contain backdrop-blur-xs bg-white/5 py-2 rounded-full sm:overflow-hidden">
+        <div className="flex justify-between fixed top-0 z-50 contain  bg-white/5 pt-2 rounded-full">
             <div>
                 <a
                     href="#"
