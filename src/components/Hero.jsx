@@ -1,7 +1,11 @@
 import React from "react";
 import DecryptedText from "../libs/animation/DecryptedText";
 import self from "../assets/self.png";
-import { Code2Icon, Coffee, MapPin } from "lucide-react";
+import { Code2Icon, Coffee, Download, MapPin } from "lucide-react";
+import GlareHover from "../libs/animation/GlareHover/GlareHover";
+import github from "../assets/cta-logo/github_cta.svg";
+import linkedin from "../assets/cta-logo/linkedin_cta.svg";
+import whatsapp from "../assets/cta-logo/zap.svg";
 const Hero = () => {
     const textStyle = {
         textOrientation: "upright",
@@ -11,7 +15,7 @@ const Hero = () => {
     return (
         <>
             <section className="flex justify-between relative">
-                <section className="hidden sm:block">
+                <section className="hidden lg:block">
                     <span
                         style={textStyle}
                         className="absolute cursor-default min-h-max top-10 shadow-xs rounded-full uppercase hidden sm:block font-light text-black/50"
@@ -26,12 +30,12 @@ const Hero = () => {
                 <section className="w-full flex justify-center">
                     <section>
                         {/* Intro section with name and pic */}
-                        <div className="flex items-center justify-between">
-                            <p className="text-5xl font-bold">
+                        <div className="flex flex-col-reverse sm:flex-row items-center relative">
+                            <p className="text-xl sm:text-4xl md:text-5xl font-bold">
                                 <span className="text-[#7A7A7A]">I'm </span>
                                 <span className="w-max">Maksudur Rahman</span>
                             </p>
-                            <div className="ml-3 border-4 rounded-full group w-25 overflow-hidden relative flex justify-center items-center">
+                            <div className="ml-3 border-4 rounded-full group w-15 sm:w-25 overflow-hidden relative flex justify-center items-center">
                                 <img
                                     src={self}
                                     className="w-full grayscale-50 group-hover:opacity-0 z-10 transition-all duration-300 ease-in-out delay-300"
@@ -41,14 +45,14 @@ const Hero = () => {
                                     Shams
                                 </span>
                             </div>
-                            <span className="text-5xl font-bold text-[#7A7A7A]">
+                            <span className="text-xl sm:text-4xl md:text-5xl font-bold text-[#7A7A7A] hidden sm:block absolute sm:-right-7 sm:bottom-5">
                                 ,
                             </span>
                         </div>
                         {/* Designation */}
-                        <section className="text-5xl font-bold">
+                        <section className="text-xl sm:text-4xl md:text-5xl font-bold">
                             <div className="flex items-center justify-center gap-3">
-                                <Code2Icon size={40}></Code2Icon>
+                                <Code2Icon className="size-5 sm:size-10"></Code2Icon>
                                 <span>MERN-Stack </span>
                                 <span className="text-[#7A7A7A]">
                                     Developer
@@ -56,10 +60,10 @@ const Hero = () => {
                             </div>
                         </section>
                         {/* location */}
-                        <section className="pt-4 text-5xl font-bold">
+                        <section className="sm:pt-4 text-xl sm:text-4xl md:text-5xl font-bold">
                             <div className="text-center flex items-center gap-3 justify-center">
                                 <span>
-                                    <MapPin size={40}></MapPin>
+                                    <MapPin className="size-5 sm:size-10"></MapPin>
                                 </span>
                                 <span className="text-[#7A7A7A]">based in</span>
                                 <span> Bangladesh</span>
@@ -67,10 +71,10 @@ const Hero = () => {
                         </section>
                     </section>
                 </section>
-                <section className="hidden sm:block">
+                <section className="hidden lg:block">
                     <span
                         style={textStyle}
-                        className="absolute cursor-default min-h-max -top-15 shadow-xs rounded-full uppercase hidden sm:block font-light text-black/50"
+                        className="absolute cursor-default min-h-max -top-15 right-0 shadow-xs rounded-full uppercase hidden sm:block font-light text-black/50"
                     >
                         <DecryptedText
                             text="frontend focused"
@@ -80,13 +84,125 @@ const Hero = () => {
                     </span>
                 </section>
             </section>
-            {/* bio */}
-            <section className="w-3/5 mx-auto text-center text-pretty text-[#7A7A7A] text-sm pt-4">
-                <span className="">
-                    Computer Science student, who finds purpose in
-                    writing code, preferably with a cup of coffee nearby
-                    <span className="text-2xl"> ☕.</span>
+            {/* bio and cta*/}
+            <section className="sm:w-7/12 mx-auto pt-3 text-center text-pretty">
+                <span className="text-sm text-[#7A7A7A]">
+                    Computer Science student, who finds purpose in writing code,
+                    preferably with a cup of coffee nearby
+                    <span className="text-xl sm:text-3xl"> ☕.</span>
                 </span>
+                <section className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-5 sm:pt-10">
+                    <GlareHover
+                        className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                        glareColor="#ffffff"
+                        height="auto"
+                        width="auto"
+                        glareOpacity={3}
+                        glareAngle={-30}
+                        background="none"
+                        border="5px"
+                        glareSize={300}
+                        borderRadius="9999px"
+                        transitionDuration={1000}
+                        playOnce={false}
+                    >
+                        <button className="bg-black/5 px-2 text-sm py-1 sm:text-base sm:px-4 sm:py-1">
+                            <a href="#contact" className="rounded-full">
+                                Let's talk
+                            </a>
+                        </button>
+                    </GlareHover>
+                    <div className="flex items-center justify-center gap-5">
+                        <GlareHover
+                            className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                            glareColor="#ffffff"
+                            height="auto"
+                            width="auto"
+                            glareOpacity={3}
+                            glareAngle={-30}
+                            background="none"
+                            border="5px"
+                            glareSize={300}
+                            borderRadius="9999px"
+                            transitionDuration={1000}
+                            playOnce={false}
+                        >
+                            <button className="bg-black/5 px-1 py-1">
+                                <a href="">
+                                    <img src={github} className="w-4 sm:w-6" alt="" />
+                                </a>
+                            </button>
+                        </GlareHover>
+                        <GlareHover
+                            className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                            glareColor="#ffffff"
+                            height="auto"
+                            width="auto"
+                            glareOpacity={3}
+                            glareAngle={-30}
+                            background="none"
+                            border="5px"
+                            glareSize={300}
+                            borderRadius="9999px"
+                            transitionDuration={1000}
+                            playOnce={false}
+                        >
+                            <button className="bg-black/5 px-1 py-1">
+                                <a href="">
+                                    <img
+                                        src={linkedin}
+                                        className="w-4 sm:w-6"
+                                        alt=""
+                                    />
+                                </a>
+                            </button>
+                        </GlareHover>
+                        <GlareHover
+                            className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                            glareColor="#ffffff"
+                            height="auto"
+                            width="auto"
+                            glareOpacity={3}
+                            glareAngle={-30}
+                            background="none"
+                            border="5px"
+                            glareSize={300}
+                            borderRadius="9999px"
+                            transitionDuration={1000}
+                            playOnce={false}
+                        >
+                            <button className="bg-black/5 px-1 py-1">
+                                <a href="">
+                                    <img
+                                        src={whatsapp}
+                                        className="w-4 sm:w-6"
+                                        alt=""
+                                    />
+                                </a>
+                            </button>
+                        </GlareHover>
+                        <GlareHover
+                            className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                            glareColor="#ffffff"
+                            height="auto"
+                            width="auto"
+                            glareOpacity={3}
+                            glareAngle={-30}
+                            background="none"
+                            border="5px"
+                            glareSize={300}
+                            borderRadius="9999px"
+                            transitionDuration={1000}
+                            playOnce={false}
+                        >
+                            <button className="bg-black/5 px-1 py-1">
+                                <a href="">
+                                    <Download className="size-4 sm:size-6"></Download>
+                                </a>
+                            </button>
+                        </GlareHover>
+                    </div>
+                </section>
             </section>
         </>
     );
