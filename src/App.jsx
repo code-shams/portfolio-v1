@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
 const App = () => {
     return (
@@ -14,6 +15,9 @@ const App = () => {
             <main className="pt-20 sm:pt-32">
                 <section className="contain">
                     <Hero></Hero>
+                </section>
+                <section className="contain pt-15 sm:pt-28">
+                    <About></About>
                 </section>
             </main>
             <footer>

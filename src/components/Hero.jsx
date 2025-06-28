@@ -31,7 +31,7 @@ const Hero = () => {
                     <section>
                         {/* Intro section with name and pic */}
                         <div className="flex flex-col-reverse sm:flex-row items-center relative">
-                            <p className="text-xl sm:text-4xl md:text-5xl font-bold">
+                            <p className="text-xl sm:text-4xl  font-bold">
                                 <span className="text-[#7A7A7A]">I'm </span>
                                 <span className="w-max">Maksudur Rahman</span>
                             </p>
@@ -41,16 +41,16 @@ const Hero = () => {
                                     className="w-full grayscale-50 group-hover:opacity-0 z-10 transition-all duration-300 ease-in-out delay-300"
                                     alt=""
                                 />
-                                <span className="absolute opacity-0 z-0 group-hover:opacity-100 transition-all duration-300 ease-in-out delay-300 font-bold uppercase text-3xl">
+                                <span className="absolute opacity-0 z-0 group-hover:opacity-100 transition-all duration-300 ease-in-out delay-300 font-bold text-3xl">
                                     Shams
                                 </span>
                             </div>
-                            <span className="text-xl sm:text-4xl md:text-5xl font-bold text-[#7A7A7A] hidden sm:block absolute sm:-right-7 sm:bottom-5">
+                            <span className="text-xl sm:text-4xl  font-bold text-[#7A7A7A] hidden sm:block absolute sm:-right-7 sm:bottom-5">
                                 ,
                             </span>
                         </div>
                         {/* Designation */}
-                        <section className="text-xl sm:text-4xl md:text-5xl font-bold">
+                        <section className="text-xl sm:text-4xl  font-bold">
                             <div className="flex items-center justify-center gap-3">
                                 <Code2Icon className="size-5 sm:size-10"></Code2Icon>
                                 <span>MERN-Stack </span>
@@ -60,10 +60,10 @@ const Hero = () => {
                             </div>
                         </section>
                         {/* location */}
-                        <section className="sm:pt-4 text-xl sm:text-4xl md:text-5xl font-bold">
+                        <section className="sm:pt-4 text-xl sm:text-4xl  font-bold">
                             <div className="text-center flex items-center gap-3 justify-center">
                                 <span>
-                                    <MapPin className="size-5 sm:size-10"></MapPin>
+                                    <MapPin className="size-5 sm:size-8"></MapPin>
                                 </span>
                                 <span className="text-[#7A7A7A]">based in</span>
                                 <span> Bangladesh</span>
@@ -87,9 +87,10 @@ const Hero = () => {
             {/* bio and cta*/}
             <section className="sm:w-7/12 mx-auto pt-3 text-center text-pretty">
                 <span className="text-sm text-[#7A7A7A]">
-                    Computer Science student, who finds purpose in writing code,
+                    {/* Computer Science student, who finds purpose in writing code,
                     preferably with a cup of coffee nearby
-                    <span className="text-xl sm:text-3xl"> ☕.</span>
+                    <span className="text-xl sm:text-3xl"> ☕.</span> */}
+                    struggle.endure.contend.code()
                 </span>
                 <section className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-5 sm:pt-10">
                     <GlareHover
