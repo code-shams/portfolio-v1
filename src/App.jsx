@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
     return (
@@ -10,6 +11,9 @@ const App = () => {
             <header className="contain relative">
                 <Navbar></Navbar>
             </header>
+            <main className="my-20 sm:my-32">
+                <Hero></Hero>
+            </main>
         </div>
     );
 };
