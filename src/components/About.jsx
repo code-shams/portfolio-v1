@@ -8,7 +8,12 @@ const About = () => {
                 className="text-center text-2xl sm:text-4xl"
                 initial={{ x: 100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", stiffness: 100, damping: 10 }}
+                transition={{
+                    type: "spring",
+                    stiffness: 100,
+                    damping: 15,
+                    opacity: { duration: 2, ease: "easeInOut" },
+                }}
                 viewport={{ once: false }} // animate only once when in view
             >
                 About Me
@@ -18,7 +23,13 @@ const About = () => {
                 className="mt-5 bg-black/5 p-2 sm:p-5 rounded-lg"
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", stiffness: 100, damping: 8, delay: 0.2 }}
+                transition={{
+                    type: "spring",
+                    stiffness: 100,
+                    damping: 8,
+                    delay: 0.2,
+                    opacity: { duration: 2, ease: "easeInOut" },
+                }}
                 viewport={{ once: false }}
             >
                 <p className="mx-auto text-left text-pretty text-sm sm:text-base text-[#7A7A7A]">

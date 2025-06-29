@@ -16,14 +16,21 @@ const Stack = () => {
                 className="text-center text-2xl sm:text-4xl"
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", stiffness: 100, damping: 10 }}
+                transition={{
+                    type: "spring",
+                    stiffness: 100,
+                    damping: 15,
+                    opacity: { duration: 2, ease: "easeInOut" },
+                }}
                 viewport={{ once: false }} // animate only once when in view
             >
                 Stack
             </motion.h1>
 
             <motion.div
-                onMouseLeave={() => handleStack("an constantly expanding stack")}
+                onMouseLeave={() =>
+                    handleStack("an constantly expanding stack")
+                }
                 className="mt-5 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-3"
                 initial={{ x: 100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -32,18 +39,19 @@ const Stack = () => {
                     stiffness: 100,
                     damping: 8,
                     delay: 0.2,
+                    opacity: { duration: 2, ease: "easeInOut" },
                 }}
                 viewport={{ once: false }}
             >
-                <div className="bg-black/5 border border-[#9e9e9e] rounded-2xl col-span-3 sm:col-span-4 md:col-span-3 p-3">
-                    <span>
+                <div className="bg-black/5 border border-[#9e9e9e] rounded-2xl col-span-3 sm:col-span-4 lg:col-span-3 p-3">
+                    <span className="flex justify-center sm:block">
                         <SwordsIcon></SwordsIcon>
                     </span>
-                    <span className="text-xl">
+                    <div className="text-sm sm:text-xl text-center sm:text-left w-full">
                         Solving real problems with
                         <br />
                         {tech}
-                    </span>
+                    </div>
                 </div>
                 <div
                     onMouseEnter={() =>
@@ -51,7 +59,11 @@ const Stack = () => {
                     }
                     className="p-2 border border-[#9e9e9e] rounded-2xl flex justify-center"
                 >
-                    <img src={milkyway} className="w-14 h-14 sm:w-24 sm:h-24" alt="" />
+                    <img
+                        src={milkyway}
+                        className="w-14 h-14 sm:w-24 sm:h-24"
+                        alt=""
+                    />
                 </div>
                 <div
                     onMouseEnter={() => handleStack("HTML5")}
@@ -60,7 +72,7 @@ const Stack = () => {
                 >
                     <img
                         src="https://icongr.am/devicon/html5-original.svg?size=35"
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0 transition-all duration-300"
                         alt="HTML5"
                     />
                 </div>
@@ -70,7 +82,7 @@ const Stack = () => {
                 >
                     <img
                         src="https://icongr.am/devicon/css3-original.svg?size=35"
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         alt="CSS3"
                     />
@@ -80,7 +92,7 @@ const Stack = () => {
                     className="p-2 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://img.icons8.com/color/96/tailwindcss.png"
                         alt="TailwindCSS"
@@ -91,7 +103,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://icongr.am/devicon/javascript-original.svg?size=96"
                         alt="JavaScript"
@@ -102,7 +114,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://icongr.am/devicon/react-original.svg?size=96"
                         alt="React"
@@ -113,7 +125,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://reactrouter.com/favicon-light.png"
                         width="35"
@@ -125,7 +137,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://axios-http.com/assets/favicon.ico"
                         alt="Axios"
@@ -136,7 +148,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://framerusercontent.com/images/p82ZbUPQdsB3LwOnllbkrrIIH5Y.png"
                         alt="Framer Motion"
@@ -147,7 +159,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://icongr.am/devicon/nodejs-original.svg?size=35"
                         alt="Node.js"
@@ -158,7 +170,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://img.icons8.com/officel/96/express-js.png"
                         alt="Express.js"
@@ -169,7 +181,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://icongr.am/devicon/mongodb-original.svg?size=35"
                         alt="MongoDB"
@@ -180,7 +192,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://img.icons8.com/color/96/java-web-token.png"
                         alt="JWT "
@@ -191,7 +203,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://icongr.am/devicon/git-original.svg?size=96"
                         alt="Git"
@@ -202,7 +214,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://img.icons8.com/office/96/github.png"
                         alt="GitHub"
@@ -213,7 +225,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://img.icons8.com/color/96/visual-studio-code-2019.png"
                         alt="VS Code"
@@ -224,7 +236,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"
                         alt="Postman API"
@@ -235,7 +247,7 @@ const Stack = () => {
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
-                        className="w-8 h-8 sm:w-14 sm:h-14 grayscale group-hover:grayscale-0
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
                     transition-all duration-300"
                         src="https://icongr.am/devicon/linux-original.svg?size=35&color=currentColor"
                         alt="Linux System"

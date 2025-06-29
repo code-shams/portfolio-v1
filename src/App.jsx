@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Stack from "./components/Stack";
+import Projects from "./components/Projects";
 
 const App = () => {
     return (
@@ -28,6 +29,12 @@ const App = () => {
                     className="contain pt-15 sm:pt-28 scroll-mt-0"
                 >
                     <Stack></Stack>
+                </section>
+                <section
+                    id="project"
+                    className="contain pt-15 sm:pt-28 scroll-mt-0"
+                >
+                    <Projects></Projects>
                 </section>
             </main>
             <footer>
