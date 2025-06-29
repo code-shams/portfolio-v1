@@ -22,16 +22,13 @@ const Navbar = () => {
                         <a href="#">HOME</a>
                     </li>
                     <li className="hover:bg-white rounded-full px-3 py-1 transition-all duration-500">
-                        <a href="#project">PROJECT</a>
+                        <a href="#about">ABOUT</a>
                     </li>
                     <li className="hover:bg-white rounded-full px-3 py-1 transition-all duration-500">
                         <a href="#stack">STACK</a>
                     </li>
-                    <li
-                        className="hover:bg-white rounded-full px-3 py-1
-                        transition-all duration-500"
-                    >
-                        <a href="#education">EDUCATION</a>
+                    <li className="hover:bg-white rounded-full px-3 py-1 transition-all duration-500">
+                        <a href="#project">PROJECT</a>
                     </li>
                     <li className="hover:bg-white rounded-full px-3 py-1 transition-all duration-500">
                         <a href="#contact">CONTACT</a>
@@ -40,17 +37,17 @@ const Navbar = () => {
             </div>
             <div className="flex justify-between items-center gap-5 relative">
                 <span className="cursor-pointer">
-                    <Moon size={30}></Moon>
+                    <Moon className="size-5 sm:size-6"></Moon>
                 </span>
                 <span className="cursor-pointer">
-                    <Download size={30}></Download>
+                    <Download className="size-5 sm:size-6"></Download>
                 </span>
                 {/* Mobile Menu */}
                 <span
                     className="cursor-pointer md:hidden"
                     onClick={handleHamMenu}
                 >
-                    <Menu size={30}></Menu>
+                    <Menu className="size-6 sm:size-6"></Menu>
                 </span>
                 <span
                     className={`border border-[#9e9e9e] min-h-40 w-max bg-[#d9d8d8] top-10 right-0 absolute rounded-lg transition-all duration-300 p-3 md:hidden ${
@@ -62,13 +59,13 @@ const Navbar = () => {
                             <a href="#">HOME</a>
                         </li>
                         <li className="lowercase">
-                            <a href="#project">PROJECT</a>
+                            <a href="#about">About</a>
                         </li>
                         <li className="lowercase">
                             <a href="#stack">STACK</a>
                         </li>
                         <li className="lowercase">
-                            <a href="#education">EDUCATION</a>
+                            <a href="#project">PROJECT</a>
                         </li>
                         <li className="lowercase">
                             <a href="#contact">CONTACT</a>

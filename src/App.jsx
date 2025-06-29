@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Stack from "./components/Stack";
 
 const App = () => {
     return (
@@ -16,8 +17,17 @@ const App = () => {
                 <section className="contain">
                     <Hero></Hero>
                 </section>
-                <section className="contain pt-15 sm:pt-28">
+                <section
+                    id="about"
+                    className="contain pt-15 sm:pt-28 scroll-mt-0"
+                >
                     <About></About>
+                </section>
+                <section
+                    id="stack"
+                    className="contain pt-15 sm:pt-28 scroll-mt-0"
+                >
+                    <Stack></Stack>
                 </section>
             </main>
             <footer>

@@ -6,7 +6,7 @@ const About = () => {
         <div className="overflow-x-hidden">
             <motion.h1
                 className="text-center text-2xl sm:text-4xl"
-                initial={{ x: 50, opacity: 0 }}
+                initial={{ x: 100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 100, damping: 10 }}
                 viewport={{ once: false }} // animate only once when in view
@@ -16,7 +16,7 @@ const About = () => {
 
             <motion.div
                 className="mt-5 bg-black/5 p-2 sm:p-5 rounded-lg"
-                initial={{ x: -50, opacity: 0 }}
+                initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 100, damping: 8, delay: 0.2 }}
                 viewport={{ once: false }}
@@ -42,7 +42,7 @@ const About = () => {
                     <br />
                     <br />
                     📚 Fun Fact: When I’m not coding, I’m usually deep into a
-                    manga or book . Some day, I'd love to dive into Arduino
+                    manga or book. Some day, I'd love to dive into Arduino
                     projects and build something fun.
                 </p>
             </motion.div>

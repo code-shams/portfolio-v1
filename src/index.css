@@ -2,6 +2,10 @@
 
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 .primary-font {
     font-family: "IBM Plex Mono", monospace;
 }
