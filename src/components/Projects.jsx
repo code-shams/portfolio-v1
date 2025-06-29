@@ -18,13 +18,13 @@ const Projects = () => {
                     type: "spring",
                     stiffness: 100,
                     damping: 15,
-                    opacity: { duration: 2, ease: "easeInOut" },
+                    opacity: { duration: 0.5, ease: "easeInOut" },
                 }}
                 viewport={{ once: false }}
             >
                 My Projects
             </motion.h1>
-            <section className="space-y-15">
+            <section className="space-y-5 sm:space-y-15">
                 {/* Project 1 KindleVent */}
                 <motion.div
                     className="mt-5 bg-sky-50/50 p-2 sm:p-5 min-h-40 border-3 border-[#9e9e9e]/20 rounded-2xl flex flex-col sm:flex-row justify-between sm:items-center gap-7 overflow-hidden"
@@ -35,7 +35,7 @@ const Projects = () => {
                         stiffness: 100,
                         damping: 15,
                         delay: 0.2,
-                        opacity: { duration: 1, ease: "easeInOut" },
+                        opacity: { duration: 0.5, ease: "easeInOut" },
                     }}
                     viewport={{ once: false }}
                 >
@@ -212,7 +212,7 @@ const Projects = () => {
                         stiffness: 100,
                         damping: 15,
                         delay: 0.2,
-                        opacity: { duration: 1, ease: "easeInOut" },
+                        opacity: { duration: 0.5, ease: "easeInOut" },
                     }}
                     viewport={{ once: false }}
                 >
@@ -389,7 +389,7 @@ const Projects = () => {
                         stiffness: 100,
                         damping: 15,
                         delay: 0.2,
-                        opacity: { duration: 1, ease: "easeInOut" },
+                        opacity: { duration: 0.5, ease: "easeInOut" },
                     }}
                     viewport={{ once: false }}
                 >

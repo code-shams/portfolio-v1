@@ -12,7 +12,7 @@ const About = () => {
                     type: "spring",
                     stiffness: 100,
                     damping: 15,
-                    opacity: { duration: 2, ease: "easeInOut" },
+                    opacity: { duration: 0.5, ease: "easeInOut" },
                 }}
                 viewport={{ once: false }} // animate only once when in view
             >
@@ -28,7 +28,7 @@ const About = () => {
                     stiffness: 100,
                     damping: 8,
                     delay: 0.2,
-                    opacity: { duration: 2, ease: "easeInOut" },
+                    opacity: { duration: 0.5, ease: "easeInOut" },
                 }}
                 viewport={{ once: false }}
             >
