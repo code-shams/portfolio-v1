@@ -90,29 +90,7 @@ const Hero = () => {
                     struggle.endure.contend.code()
                 </span>
                 <section className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-5 sm:pt-10">
-                    <GlareHover
-                        className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                        glareColor="#ffffff"
-                        height="auto"
-                        width="auto"
-                        glareOpacity={3}
-                        glareAngle={-30}
-                        background="none"
-                        glareSize={300}
-                        borderRadius="9999px"
-                        transitionDuration={1000}
-                        playOnce={false}
-                        style={{
-                            border: "2px solid #9e9e9e",
-                        }}
-                    >
-                        <button className="bg-black/5 px-2 text-sm py-1 sm:text-base sm:px-4 sm:py-1">
-                            <a href="#contact" className="rounded-full">
-                                Let's talk
-                            </a>
-                        </button>
-                    </GlareHover>
-                    <div className="flex items-center justify-center gap-5">
+                    <a href="#contact">
                         <GlareHover
                             className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                             glareColor="#ffffff"
@@ -129,64 +107,89 @@ const Hero = () => {
                                 border: "2px solid #9e9e9e",
                             }}
                         >
-                            <button className="bg-black/5 px-1 py-1">
-                                <a href="">
+                            <button className="bg-black/5 px-2 text-sm py-1 sm:text-base sm:px-4 sm:py-1">
+                                Let's talk
+                            </button>
+                        </GlareHover>
+                    </a>
+                    <div className="flex items-center justify-center gap-5">
+                        <a href="https://github.com/code-shams" target="_blank">
+                            <GlareHover
+                                className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                                glareColor="#ffffff"
+                                height="auto"
+                                width="auto"
+                                glareOpacity={3}
+                                glareAngle={-30}
+                                background="none"
+                                glareSize={300}
+                                borderRadius="9999px"
+                                transitionDuration={1000}
+                                playOnce={false}
+                                style={{
+                                    border: "2px solid #9e9e9e",
+                                }}
+                            >
+                                <button className="bg-black/5 px-1 py-1">
                                     <img
                                         src={github}
                                         className="w-4 sm:w-6"
                                         alt=""
                                     />
-                                </a>
-                            </button>
-                        </GlareHover>
-                        <GlareHover
-                            className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                            glareColor="#ffffff"
-                            height="auto"
-                            width="auto"
-                            glareOpacity={3}
-                            glareAngle={-30}
-                            background="none"
-                            border="5px"
-                            glareSize={300}
-                            borderRadius="9999px"
-                            transitionDuration={1000}
-                            playOnce={false}
+                                </button>
+                            </GlareHover>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/code-shams/"
+                            target="_blank"
                         >
-                            <button className="bg-black/5 px-1 py-1">
-                                <a href="">
+                            <GlareHover
+                                className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                                glareColor="#ffffff"
+                                height="auto"
+                                width="auto"
+                                glareOpacity={3}
+                                glareAngle={-30}
+                                background="none"
+                                border="5px"
+                                glareSize={300}
+                                borderRadius="9999px"
+                                transitionDuration={1000}
+                                playOnce={false}
+                            >
+                                <button className="bg-black/5 px-1 py-1">
                                     <img
                                         src={linkedin}
                                         className="w-4 sm:w-6"
                                         alt=""
                                     />
-                                </a>
-                            </button>
-                        </GlareHover>
-                        <GlareHover
-                            className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                            glareColor="#ffffff"
-                            height="auto"
-                            width="auto"
-                            glareOpacity={3}
-                            glareAngle={-30}
-                            background="none"
-                            border="5px"
-                            glareSize={300}
-                            borderRadius="9999px"
-                            transitionDuration={1000}
-                            playOnce={false}
-                        >
-                            <button className="bg-black/5 px-1 py-1">
-                                <a href="">
+                                </button>
+                            </GlareHover>
+                        </a>
+                        <a href="https://wa.link/eameu6" target="_blank">
+                            <GlareHover
+                                className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                                glareColor="#ffffff"
+                                height="auto"
+                                width="auto"
+                                glareOpacity={3}
+                                glareAngle={-30}
+                                background="none"
+                                border="5px"
+                                glareSize={300}
+                                borderRadius="9999px"
+                                transitionDuration={1000}
+                                playOnce={false}
+                            >
+                                <button className="bg-black/5 px-1 py-1">
                                     <img
                                         src={whatsapp}
                                         className="w-4 sm:w-6"
                                         alt=""
                                     />
-                                </a>
-                            </button>
-                        </GlareHover>
+                                </button>
+                            </GlareHover>
+                        </a>
                         <GlareHover
                             className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                             glareColor="#ffffff"
