@@ -61,13 +61,12 @@ const Stack = () => {
                 >
                     <img
                         src={milkyway}
-                        className="w-14 h-14 sm:w-24 sm:h-24"
+                        className="w-14 h-14 sm:w-18 sm:h-18"
                         alt=""
                     />
                 </div>
                 <div
                     onMouseEnter={() => handleStack("HTML5")}
-                    src="https://icongr.am/devicon/css3-original.svg?size=35"
                     className="p-2 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
@@ -100,7 +99,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("JavaScript")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -111,7 +110,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("React")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -122,7 +121,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("React-Router")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -134,7 +133,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Axios")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -145,7 +144,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Motion")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -156,7 +155,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Node.js")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -167,7 +166,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Express.js")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -178,7 +177,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("MongoDB")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -189,7 +188,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Firebase")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -200,7 +199,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("JWT")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -211,7 +210,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Git")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -222,7 +221,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Github")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -233,7 +232,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("VS Code")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -244,7 +243,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Postman API")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
@@ -255,7 +254,7 @@ const Stack = () => {
                 </div>
                 <div
                     onMouseEnter={() => handleStack("Linux")}
-                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                    className="p-2 w-full h-18 sm:h-24 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >
                     <img
                         className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
