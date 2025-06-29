@@ -188,6 +188,17 @@ const Stack = () => {
                     />
                 </div>
                 <div
+                    onMouseEnter={() => handleStack("Firebase")}
+                    className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
+                >
+                    <img
+                        className="w-8 h-8 sm:w-14 sm:h-14 sm:grayscale group-hover:grayscale-0
+                    transition-all duration-300"
+                        src="https://img.icons8.com/color/96/firebase.png"
+                        alt="Firebase"
+                    />
+                </div>
+                <div
                     onMouseEnter={() => handleStack("JWT")}
                     className="p-2 w-full h-20 sm:h-28 border border-[#9e9e9e] rounded-2xl flex justify-center items-center group"
                 >

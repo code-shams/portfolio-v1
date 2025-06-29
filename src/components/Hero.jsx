@@ -87,9 +87,6 @@ const Hero = () => {
             {/* bio and cta*/}
             <section className="sm:w-7/12 mx-auto pt-3 text-center text-pretty">
                 <span className="text-sm text-[#7A7A7A]">
-                    {/* Computer Science student, who finds purpose in writing code,
-                    preferably with a cup of coffee nearby
-                    <span className="text-xl sm:text-3xl"> ☕.</span> */}
                     struggle.endure.contend.code()
                 </span>
                 <section className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-5 sm:pt-10">
@@ -101,11 +98,13 @@ const Hero = () => {
                         glareOpacity={3}
                         glareAngle={-30}
                         background="none"
-                        border="5px"
                         glareSize={300}
                         borderRadius="9999px"
                         transitionDuration={1000}
                         playOnce={false}
+                        style={{
+                            border: "2px solid #9e9e9e",
+                        }}
                     >
                         <button className="bg-black/5 px-2 text-sm py-1 sm:text-base sm:px-4 sm:py-1">
                             <a href="#contact" className="rounded-full">
@@ -122,15 +121,21 @@ const Hero = () => {
                             glareOpacity={3}
                             glareAngle={-30}
                             background="none"
-                            border="5px"
                             glareSize={300}
                             borderRadius="9999px"
                             transitionDuration={1000}
                             playOnce={false}
+                            style={{
+                                border: "2px solid #9e9e9e",
+                            }}
                         >
                             <button className="bg-black/5 px-1 py-1">
                                 <a href="">
-                                    <img src={github} className="w-4 sm:w-6" alt="" />
+                                    <img
+                                        src={github}
+                                        className="w-4 sm:w-6"
+                                        alt=""
+                                    />
                                 </a>
                             </button>
                         </GlareHover>
