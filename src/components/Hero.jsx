@@ -50,7 +50,7 @@ const Hero = () => {
                                         Maksudur Rahman
                                     </span>
                                 </p>
-                                <div className="ml-3 border-2 sm:border-4 rounded-full group w-25 mb-5 sm:w-25 overflow-hidden relative flex justify-center items-center">
+                                <div className="ml-3 border-2 sm:border-4 rounded-full group w-25 mb-5 sm:mb-2 sm:w-25 overflow-hidden relative flex justify-center items-center">
                                     <img
                                         src={self}
                                         className="w-full grayscale-50 group-hover:opacity-0 z-10 transition-all duration-300 ease-in-out delay-300"
@@ -60,12 +60,12 @@ const Hero = () => {
                                         Shams
                                     </span>
                                 </div>
-                                <span className="text-xl sm:text-4xl  font-bold text-[#7A7A7A] hidden sm:block absolute sm:-right-7 sm:bottom-5">
+                                <span className="text-xl sm:text-4xl  font-bold text-[#7A7A7A] hidden sm:block absolute sm:-right-5 sm:bottom-9">
                                     ,
                                 </span>
                             </div>
                             {/* Designation */}
-                            <section className="text-xl sm:text-4xl  font-bold">
+                            <section className="text-xl sm:text-4xl font-bold">
                                 <div className="flex items-center justify-center gap-3">
                                     <Code2Icon className="size-5 sm:size-10"></Code2Icon>
                                     <span>MERN-Stack </span>
@@ -227,7 +227,10 @@ const Hero = () => {
                                     </button>
                                 </GlareHover>
                             </a>
-                            <a href="https://wa.link/eameu6" target="_blank">
+                            <a
+                                href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=dev.maksudur.rahman@gmail.com"
+                                target="_blank"
+                            >
                                 <GlareHover
                                     className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                                     glareColor="#ffffff"
