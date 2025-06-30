@@ -1,4 +1,13 @@
-import { Download, HandMetalIcon, Home, Menu, Moon, Sparkles, ToolCase, Zap } from "lucide-react";
+import {
+    Download,
+    HandMetalIcon,
+    Home,
+    Menu,
+    Moon,
+    Sparkles,
+    ToolCase,
+    Zap,
+} from "lucide-react";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -18,7 +27,7 @@ const Navbar = () => {
             </div>
             <div className="w-max rounded-full border border-[#9e9e9e] p-[2px] backdrop-blur-xs hidden md:block">
                 <ul className="flex justify-between items-center gap-2 text-sm p-1 rounded-full bg-black/10">
-                    <li className="hover:bg-white rounded-full px-3 py-1 transition-all duration-500">
+                    <li className="hover:bg-white transition-all duration-500 rounded-full px-3 py-1">
                         <a href="#">HOME</a>
                     </li>
                     <li className="hover:bg-white rounded-full px-3 py-1 transition-all duration-500">

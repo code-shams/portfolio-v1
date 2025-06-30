@@ -32,7 +32,7 @@ const About = () => {
                 }}
                 viewport={{ once: false }}
             >
-                <div className="mx-auto text-left text-pretty text-sm sm:text-base text-[#7A7A7A]">
+                <div className="mx-auto text-left text-pretty text-sm sm:text-base text-black sm:text-[#7A7A7A]">
                     <p className="w-full bg-black/70 text-white text-center rounded-t-2xl rounded-b-lg p-2 sm:p-3 sm:pt-0 mt-1 mb-2 sm:mb-3">
                         Computer Science student, who finds purpose in writing
                         code,<br className="block sm:hidden" />preferably with a cup of coffee nearby
