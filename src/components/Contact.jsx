@@ -18,7 +18,16 @@ const Contact = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const msg = message.current.value;
-        if (!msg) {
+        if (!email) {
+            toast.error("Please write down email address!", {
+                style: {
+                    borderRadius: "10px",
+                    background: "#333",
+                    color: "#fff",
+                },
+            });
+            return;
+        } else if (!msg) {
             toast.error("Please write down your message!", {
                 style: {
                     borderRadius: "10px",
@@ -63,7 +72,8 @@ const Contact = () => {
                         Let's talk
                     </h1>
                     <p className="text-xs text-[#7A7A7A]">
-                        I'd be happy to apply my skills to your needs. Drop a message to learn more about how I can contribute.
+                        I'd be happy to apply my skills to your needs. Drop a
+                        message to learn more about how I can contribute.
                     </p>
                 </div>
 
@@ -212,7 +222,7 @@ const Contact = () => {
                                 alt=""
                             />
                         </a>
-                        
+
                         {/* github */}
                         <a
                             className="cursor-pointer group hover:-translate-y-2 transition-all duration-300"

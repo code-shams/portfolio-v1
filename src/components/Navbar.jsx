@@ -9,6 +9,7 @@ import {
     Zap,
 } from "lucide-react";
 import React, { useState } from "react";
+import GlareHover from "../libs/animation/GlareHover/GlareHover";
 
 const Navbar = () => {
     const [menuState, setMenuState] = useState(false);
@@ -48,9 +49,32 @@ const Navbar = () => {
                 <span className="cursor-pointer hidden">
                     <Moon className="size-5 sm:size-6"></Moon>
                 </span>
-                <span className="cursor-pointer">
-                    <Download className="size-5 sm:size-6"></Download>
-                </span>
+                {/* <span className="cursor-pointer">
+                    
+                </span> */}
+                <a href="#">
+                    <GlareHover
+                        className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                        glareColor="#ffffff"
+                        height="auto"
+                        width="auto"
+                        glareOpacity={3}
+                        glareAngle={-30}
+                        background="none"
+                        glareSize={300}
+                        borderRadius="9999px"
+                        transitionDuration={1000}
+                        playOnce={false}
+                        style={{
+                            border: "2px solid #9e9e9e",
+                        }}
+                    >
+                        <button className="flex items-center gap-1 bg-black/5 px-2 text-sm py-1 sm:text-base sm:px-4 sm:py-1">
+                            Resume
+                            <Download className="size-3 sm:size-4"></Download>
+                        </button>
+                    </GlareHover>
+                </a>
                 {/* Mobile Menu */}
                 <span
                     className="cursor-pointer md:hidden"
