@@ -1,4 +1,4 @@
-import { Download, Menu, Moon } from "lucide-react";
+import { Download, HandMetalIcon, Home, Menu, Moon, Sparkles, ToolCase, Zap } from "lucide-react";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -50,25 +50,52 @@ const Navbar = () => {
                     <Menu className="size-6 sm:size-6"></Menu>
                 </span>
                 <span
-                    className={`border border-[#9e9e9e] min-h-40 w-max bg-[#d9d8d8] top-10 right-0 absolute rounded-lg transition-all duration-300 p-3 md:hidden ${
+                    className={`border border-[#9e9e9e] min-h-40 min-w-30 w-max bg-[#d9d8d8] top-10 right-0 absolute rounded-lg transition-all duration-300 p-3 md:hidden ${
                         menuState ? "translate-0" : "scale-0 -translate-y-full"
                     }`}
                 >
                     <ul className="flex flex-col gap-2 text-sm p-1">
                         <li className="lowercase">
-                            <a href="#">HOME</a>
+                            <a href="#" className="flex items-center gap-1">
+                                <Home size={18}></Home>
+                                HOME
+                            </a>
                         </li>
                         <li className="lowercase">
-                            <a href="#about">About</a>
+                            <a
+                                className="flex items-center gap-1"
+                                href="#about"
+                            >
+                                <Sparkles size={18}></Sparkles>
+                                About
+                            </a>
                         </li>
                         <li className="lowercase">
-                            <a href="#stack">STACK</a>
+                            <a
+                                className="flex items-center gap-1"
+                                href="#stack"
+                            >
+                                <ToolCase size={18}></ToolCase>
+                                STACK
+                            </a>
                         </li>
                         <li className="lowercase">
-                            <a href="#project">PROJECT</a>
+                            <a
+                                className="flex items-center gap-1"
+                                href="#project"
+                            >
+                                <Zap size={18}></Zap>
+                                PROJECT
+                            </a>
                         </li>
                         <li className="lowercase">
-                            <a href="#contact">CONTACT</a>
+                            <a
+                                className="flex items-center gap-1"
+                                href="#contact"
+                            >
+                                <HandMetalIcon size={18}></HandMetalIcon>
+                                CONTACT
+                            </a>
                         </li>
                     </ul>
                 </span>

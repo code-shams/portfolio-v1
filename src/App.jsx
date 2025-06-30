@@ -15,7 +15,7 @@ const App = () => {
                 <Navbar></Navbar>
             </header>
             <main className="pt-20 sm:pt-32">
-                <section className="contain">
+                <section className="contain pt-10">
                     <Hero></Hero>
                 </section>
                 <section

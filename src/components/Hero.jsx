@@ -50,7 +50,7 @@ const Hero = () => {
                                         Maksudur Rahman
                                     </span>
                                 </p>
-                                <div className="ml-3 border-4 rounded-full group w-15 sm:w-25 overflow-hidden relative flex justify-center items-center">
+                                <div className="ml-3 border-2 sm:border-4 rounded-full group w-25 mb-5 sm:w-25 overflow-hidden relative flex justify-center items-center">
                                     <img
                                         src={self}
                                         className="w-full grayscale-50 group-hover:opacity-0 z-10 transition-all duration-300 ease-in-out delay-300"
@@ -184,11 +184,13 @@ const Hero = () => {
                                     glareOpacity={3}
                                     glareAngle={-30}
                                     background="none"
-                                    border="5px"
                                     glareSize={300}
                                     borderRadius="9999px"
                                     transitionDuration={1000}
                                     playOnce={false}
+                                    style={{
+                                        border: "2px solid #9e9e9e",
+                                    }}
                                 >
                                     <button className="bg-black/5 px-1 py-1">
                                         <img
@@ -208,11 +210,13 @@ const Hero = () => {
                                     glareOpacity={3}
                                     glareAngle={-30}
                                     background="none"
-                                    border="5px"
                                     glareSize={300}
                                     borderRadius="9999px"
                                     transitionDuration={1000}
                                     playOnce={false}
+                                    style={{
+                                        border: "2px solid #9e9e9e",
+                                    }}
                                 >
                                     <button className="bg-black/5 px-1 py-1">
                                         <img
@@ -223,26 +227,54 @@ const Hero = () => {
                                     </button>
                                 </GlareHover>
                             </a>
-                            <GlareHover
-                                className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                                glareColor="#ffffff"
-                                height="auto"
-                                width="auto"
-                                glareOpacity={3}
-                                glareAngle={-30}
-                                background="none"
-                                border="5px"
-                                glareSize={300}
-                                borderRadius="9999px"
-                                transitionDuration={1000}
-                                playOnce={false}
-                            >
-                                <button className="bg-black/5 px-1 py-1">
-                                    <a href="">
-                                        <Download className="size-4 sm:size-6"></Download>
-                                    </a>
-                                </button>
-                            </GlareHover>
+                            <a href="https://wa.link/eameu6" target="_blank">
+                                <GlareHover
+                                    className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                                    glareColor="#ffffff"
+                                    height="auto"
+                                    width="auto"
+                                    glareOpacity={3}
+                                    glareAngle={-30}
+                                    background="none"
+                                    glareSize={300}
+                                    borderRadius="9999px"
+                                    transitionDuration={1000}
+                                    playOnce={false}
+                                    style={{
+                                        border: "2px solid #9e9e9e",
+                                    }}
+                                >
+                                    <button className="bg-black/5 px-1 py-1">
+                                        <img
+                                            src="https://img.icons8.com/windows/96/gmail-new.png"
+                                            className="w-4 sm:w-6"
+                                            alt=""
+                                        />
+                                    </button>
+                                </GlareHover>
+                            </a>
+                            <a href="">
+                                <GlareHover
+                                    className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                                    glareColor="#ffffff"
+                                    height="auto"
+                                    width="auto"
+                                    glareOpacity={3}
+                                    glareAngle={-30}
+                                    background="none"
+                                    glareSize={300}
+                                    borderRadius="9999px"
+                                    transitionDuration={1000}
+                                    playOnce={false}
+                                    style={{
+                                        border: "2px solid #9e9e9e",
+                                    }}
+                                >
+                                    <button className="bg-black/5 px-1 py-1">
+                                        <Download className="size-4 sm:size-[25px]"></Download>
+                                    </button>
+                                </GlareHover>
+                            </a>
                         </div>
                     </section>
                 </motion.section>
