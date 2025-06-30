@@ -63,8 +63,7 @@ const Contact = () => {
                         Let's talk
                     </h1>
                     <p className="text-xs text-[#7A7A7A]">
-                        I'm excited to apply my skills to your projects. Contact
-                        me to learn more about how I can contribute.
+                        I'd be happy to apply my skills to your needs. Drop a message to learn more about how I can contribute.
                     </p>
                 </div>
 
@@ -116,8 +115,8 @@ const Contact = () => {
                             }}
                         >
                             <span className="relative bg-black/5 px-2 text-sm py-1 sm:text-base sm:px-4 sm:py-1 flex items-center gap-2">
-                                <span className="pr-10">Send</span>
-                                <span className="absolute left-[60%] transition-all duration-500 group-hover:translate-x-6 group-hover:scale-125">
+                                <span className="pr-5 sm:pr-10">Send</span>
+                                <span className="absolute left-[70%] sm:left-[60%] transition-all duration-500 group-hover:translate-x-6 group-hover:scale-125">
                                     <SendHorizonal size={18}></SendHorizonal>
                                 </span>
                             </span>

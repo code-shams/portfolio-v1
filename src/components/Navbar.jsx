@@ -45,7 +45,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="flex justify-between items-center gap-5 relative">
-                <span className="cursor-pointer">
+                <span className="cursor-pointer hidden">
                     <Moon className="size-5 sm:size-6"></Moon>
                 </span>
                 <span className="cursor-pointer">

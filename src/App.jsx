@@ -6,6 +6,7 @@ import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer";
 
 const App = () => {
     return (
@@ -54,8 +55,8 @@ const App = () => {
                     <Contact></Contact>
                 </section>
             </main>
-            <footer>
-                <div className="min-h-screen"></div>
+            <footer className="contain pb-3  pt-10 sm:pt-20 scroll-mt-0 overflow-hidden">
+                <Footer></Footer>
             </footer>
         </div>
     );
