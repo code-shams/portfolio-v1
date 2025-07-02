@@ -3,10 +3,10 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Stack from "./components/Stack";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
+import ProjectsContainer from "./components/Projects/ProjectsContainer";
 
 const App = () => {
     return (
@@ -46,7 +46,7 @@ const App = () => {
                     id="project"
                     className="contain pt-15 sm:pt-28 scroll-mt-0"
                 >
-                    <Projects></Projects>
+                    <ProjectsContainer></ProjectsContainer>
                 </section>
                 <section
                     id="contact"

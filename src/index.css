@@ -22,5 +22,5 @@ html {
 }
 
 .contain {
-    @apply max-w-[1515px] mx-auto w-11/12;
+    @apply max-w-screen-2xl mx-auto w-11/12;
 }
