@@ -7,6 +7,10 @@ import github from "../../assets/cta-logo/github_cta.svg";
 import { Globe } from "lucide-react";
 import GlareHover from "../../libs/animation/GlareHover/GlareHover";
 
+/**
+ * TODO - Create an Projects array. Make the project component dynamic. Map the project array and render project component inside ProjectsContainer.jsx
+*/
+
 const ProjectsContainer = () => {
     return (
         <div className="overflow-hidden">
@@ -42,7 +46,7 @@ const ProjectsContainer = () => {
                     <div className="group w-full sm:w-[60%] h-50 sm:min-h-95 sm:scale-95 overflow-hidden hover:scale-100 transition-all duration-300 hover:shadow-2xl rounded-lg relative">
                         <img
                             src={a11}
-                            className="w-full sm:absolute top-0 sm:group-hover:-translate-y-[38%] md:group-hover:-translate-y-[52%] lg:group-hover:-translate-y-[65%] xl:group-hover:-translate-y-[75%] rounded-lg transition-all duration-2000 ease-in-out"
+                            className="w-full sm:absolute top-0 sm:group-hover:-translate-y-[38%] md:group-hover:-translate-y-[52%] lg:group-hover:-translate-y-[65%]  rounded-lg transition-all duration-2000 ease-in-out"
                             alt=""
                         />
                     </div>
@@ -219,7 +223,7 @@ const ProjectsContainer = () => {
                     <div className="group w-full sm:w-[60%] h-50 sm:min-h-95 sm:scale-95 overflow-hidden hover:scale-100 transition-all duration-300 hover:shadow-2xl rounded-lg relative">
                         <img
                             src={a10}
-                            className="w-full sm:absolute top-0 sm:group-hover:-translate-y-[55%] md:group-hover:-translate-y-[62%] lg:group-hover:-translate-y-3/4 xl:group-hover:-translate-y-[82%] rounded-lg transition-all duration-2000 ease-in-out"
+                            className="w-full sm:absolute top-0 sm:group-hover:-translate-y-[55%] md:group-hover:-translate-y-[62%] lg:group-hover:-translate-y-3/4  rounded-lg transition-all duration-2000 ease-in-out"
                             alt=""
                         />
                     </div>
@@ -396,7 +400,7 @@ const ProjectsContainer = () => {
                     <div className="group w-full sm:w-[60%] h-50 sm:min-h-95 sm:scale-95 overflow-hidden hover:scale-100 transition-all duration-300 hover:shadow-2xl rounded-lg relative">
                         <img
                             src={a9}
-                            className="w-full sm:absolute top-0 sm:group-hover:-translate-y-[52%] md:group-hover:-translate-y-[62%] lg:group-hover:-translate-y-[75%] xl:group-hover:-translate-y-[80%] rounded-lg transition-all duration-2000 ease-in-out"
+                            className="w-full sm:absolute top-0 sm:group-hover:-translate-y-[52%] md:group-hover:-translate-y-[62%] lg:group-hover:-translate-y-[75%]  rounded-lg transition-all duration-2000 ease-in-out"
                             alt=""
                         />
                     </div>
