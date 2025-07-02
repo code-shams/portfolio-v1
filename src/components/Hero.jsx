@@ -50,7 +50,7 @@ const Hero = () => {
                                         Maksudur Rahman
                                     </span>
                                 </p>
-                                <div className="ml-3 border-2 sm:border-4 rounded-full group w-25 mb-5 sm:mb-2 sm:w-25 overflow-hidden relative flex justify-center items-center">
+                                <div className="ml-3 border-2 sm:border-4 rounded-full group w-25 mb-5 sm:mb-2 sm:w-25 min-h-10 overflow-hidden relative flex justify-center items-center">
                                     <img
                                         src={self}
                                         className="w-full grayscale-50 group-hover:opacity-0 z-10 transition-all duration-300 ease-in-out delay-300"
